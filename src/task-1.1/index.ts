@@ -5,22 +5,22 @@ import { Messages } from './constants';
 // https://www.sitepoint.com/javascript-command-line-interface-cli-node-js/
 
 type Answers = {
-    stringToRevers: string,
-    askAgain: boolean
+    stringToRevers: string;
+    askAgain: boolean;
 };
 
 const questions = [
     {
         type: 'input',
         name: 'stringToRevers',
-        message: Messages.REVERSE_STRING
+        message: Messages.REVERSE_STRING,
     },
     {
         type: 'confirm',
         name: 'askAgain',
         message: Messages.ASK_AGAIN,
-        default: true
-    }
+        default: true,
+    },
 ];
 
 const runTask = async () => {
@@ -31,6 +31,6 @@ const runTask = async () => {
     if (askAgain) {
         runTask();
     }
-}
+};
 
 runTask();
