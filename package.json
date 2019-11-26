@@ -4,7 +4,8 @@
   "description": "NodeJS Global Mentoring Program [2019Q4 RU]",
   "main": "src/index.ts",
   "scripts": {
-    "task-1.1": "nodemon src/task-1.1/index.ts",
+    "task1": "nodemon src/task-1.1/index.ts",
+    "task2": "nodemon src/task-1.2/index.ts",
     "task-1.2": "nodemon src/task-1.2/index.ts",
     "dev": "nodemon src/index.ts",
     "dev:debug": "nodemon --inspect src/index.ts",
@@ -35,11 +36,11 @@
     "eslint-plugin-prettier": "^3.1.1",
     "lodash": "^4.17.15",
     "nodemon": "^2.0.0",
+    "prettier": "^1.19.1",
     "typescript": "^3.7.2"
   },
   "dependencies": {
     "chalk": "^3.0.0",
-    "csvtojson": "^2.0.10",
     "express": "^4.17.1",
     "inquirer": "^7.0.0",
     "prettier": "^1.19.1",
