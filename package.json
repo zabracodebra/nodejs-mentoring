@@ -5,11 +5,8 @@
   "main": "src/index.ts",
   "scripts": {
     "task1": "nodemon src/task-1.1/index.ts",
-    "task2": "nodemon src/task-1.2/index.ts",
-    "task-1.2": "nodemon src/task-1.2/index.ts",
-    "dev": "nodemon src/index.ts",
-    "dev:debug": "nodemon --inspect src/index.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "task2": "nodemon src/task-1.2/convert-csv.ts node_mentoring_t1_2_input_example.csv result.txt --ignoreColumns amount",
+    "convert-csv": "nodemon src/task-1.2/convert-csv.ts"
   },
   "repository": {
     "type": "git",
@@ -30,6 +27,7 @@
     "@types/inquirer": "^6.5.0",
     "@types/lodash": "^4.14.149",
     "@types/through2-map": "^3.0.0",
+    "@types/yargs": "^13.0.3",
     "@typescript-eslint/eslint-plugin": "^2.8.0",
     "@typescript-eslint/parser": "^2.8.0",
     "eslint": "^6.6.0",
@@ -48,6 +46,7 @@
     "prettier": "^1.19.1",
     "through2": "^3.0.1",
     "through2-map": "^3.0.0",
-    "ts-node": "^8.5.2"
+    "ts-node": "^8.5.2",
+    "yargs": "^15.0.2"
   }
 }
